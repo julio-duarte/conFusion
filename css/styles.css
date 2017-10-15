@@ -33,6 +33,12 @@ body{
     padding: 50px 0px 0px 0px;
     z-index: 0;
 }
+.modal-footer {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
 
 .navbar-inverse {
     background-color: #512DA8;
@@ -42,7 +48,16 @@ body{
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding:  10px;
+}
 
-
-
+/* Acerta bug de scroll do background no Bootstrap 4 */
+body.modal-open {
+    overflow: auto;
+}
+body.modal-open[style] {
+    padding-right: 0px !important;
+}
+.modal::-webkit-scrollbar {
+    width: 0 !important; /*removes the scrollbar but still scrollable*/
+    /* reference: http://stackoverflow.com/a/26500272/2259400 */
 }
