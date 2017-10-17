@@ -49,6 +49,20 @@ body{
     border-bottom: 1px solid #ddd;
     padding:  10px;
 }
+.carousel {
+    background: #512DA8
+}
+.carousel-item {
+    height: 300px;
+}
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+
 
 /* Acerta bug de scroll do background no Bootstrap 4 */
 body.modal-open {
@@ -60,4 +74,22 @@ body.modal-open[style] {
 .modal::-webkit-scrollbar {
     width: 0 !important; /*removes the scrollbar but still scrollable*/
     /* reference: http://stackoverflow.com/a/26500272/2259400 */
+}
+
+
+/* Alinhas no centro a posição do texto no carousel  */
+.carousel-caption {
+    position: absolute;
+    top: 20%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
 }
