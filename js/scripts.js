@@ -14,4 +14,29 @@ $(document).ready(function() {
         }
         
     })
+
+    //Open Modals
+    $("#btnLogin").click(function() {
+
+        $("#loginModal").modal('show');
+
+    });
+    $("#btnReserve").click(function() {
+
+        $("#reserveModal").modal('show');
+
+    });
+
+    //Close Modals
+    $(".btnCloseLogin").click(function() {
+
+        $("#loginModal").modal('hide');
+
+    });
+    $(".btnCloseReserve").click(function() {
+
+        $("#reserveModal").modal('hide');
+
+    });
+
 });
